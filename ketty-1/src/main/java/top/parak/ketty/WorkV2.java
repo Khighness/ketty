@@ -9,11 +9,10 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.nio.channels.spi.SelectorProvider;
-import java.nio.charset.Charset;
 import java.util.Iterator;
 
 /**
- * @author cantai
+ * @author Khighness
  * @since 2023-12-09
  */
 public class WorkV2 implements Runnable {
