@@ -5,20 +5,18 @@ import org.slf4j.LoggerFactory;
 import top.parak.ketty.concurrent.DefaultPromise;
 
 import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
- * @author cantai
+ * @author Khighness
  * @since 2023-12-12
  */
 public class DefaultPromiseTest {
-    public static void main(String[] args) throws ExecutionException, InterruptedException, TimeoutException {
+    public static void main(String[] args) {
         Callable<Integer> callable = () -> {
             TimeUnit.SECONDS.sleep(6);
             return 3;
