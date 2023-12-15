@@ -11,7 +11,7 @@ import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @author cantai
+ * @author Khighness
  * @since 2023-12-09
  */
 public abstract class SingleThreadEventExecutor implements EventExecutor, Executor {

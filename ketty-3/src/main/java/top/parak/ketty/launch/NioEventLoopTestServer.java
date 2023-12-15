@@ -14,7 +14,7 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 
 /**
- * @author cantai
+ * @author Khighness
  * @since 2023-12-09
  */
 public class NioEventLoopTestServer {
