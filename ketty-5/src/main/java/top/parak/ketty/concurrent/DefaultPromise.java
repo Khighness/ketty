@@ -29,7 +29,7 @@ public class DefaultPromise<V> implements Promise<V> {
     private volatile Object result;
     private int waiters;
 
-    private List<GenericListener<? extends Promise<? super V>>> listeners = new ArrayList<>();
+    private List<GenericListener<DefaultPromise<V>>> listeners = new ArrayList<>();
 
     public DefaultPromise() {
     }
@@ -266,7 +266,7 @@ public class DefaultPromise<V> implements Promise<V> {
         }
     }
 
-    public Promise<V> addListener(GenericListener<? extends Promise<? super V>> listener) {
+    public Promise<V> addListener(GenericListener<DefaultPromise<V>> listener) {
         synchronized (this) {
             listeners.add(listener);
         }
@@ -277,7 +277,7 @@ public class DefaultPromise<V> implements Promise<V> {
     }
 
     private void notifyListeners() {
-        for (GenericListener<? extends Promise<? super V>> listener : listeners) {
+        for (GenericListener<DefaultPromise<V>> listener : listeners) {
             listener.operationComplete(this);
         }
     }
