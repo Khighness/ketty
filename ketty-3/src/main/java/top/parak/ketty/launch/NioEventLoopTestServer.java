@@ -2,7 +2,7 @@ package top.parak.ketty.launch;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.parak.ketty.channel.NioEventLoop;
+import top.parak.ketty.concurrent.NioEventLoop;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

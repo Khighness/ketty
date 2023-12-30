@@ -1,4 +1,4 @@
-package top.parak.ketty.channel;
+package top.parak.ketty.concurrent;
 
 /**
  * @author Khighness

@@ -1,4 +1,4 @@
-package top.parak.ketty.channel;
+package top.parak.ketty.concurrent;
 
 import com.google.common.base.Preconditions;
 import org.slf4j.Logger;

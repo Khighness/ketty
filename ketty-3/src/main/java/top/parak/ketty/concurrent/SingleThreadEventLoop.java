@@ -1,4 +1,4 @@
-package top.parak.ketty.channel;
+package top.parak.ketty.concurrent;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
